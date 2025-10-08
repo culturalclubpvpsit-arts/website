@@ -195,14 +195,14 @@ function App() {
         id: 1,
         name: "R Vennela Sai",
         role: "CSM Student Coordinator",
-        image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: "vennela.jpeg",
         contact: "22501a4252@pvpsit.ac.in",
       },
       {
         id: 2,
         name: "N Maheswari",
         role: "CSM Student Coordinator",
-        image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: "maheswari.jpeg",
         contact: "22501a4238@pvpsit.ac.in",
       },
       {
@@ -254,12 +254,10 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       
 
-      {/* NEW BANNER SECTION START */}
-      <section
-        className="bg-center bg-cover text-white py-16 px-4 sm:px-6 lg:px-8 shadow-inner shadow-purple-900/50 pt-16 md:pt-20"
-        style={{ backgroundImage: `url('banner.jpg')` }}
-      >
-        
+     <section
+  className="bg-center bg-cover text-white py-16 px-4 sm:px-6 lg:px-8 shadow-inner shadow-purple-900/50 pt-16 md:pt-20"
+  style={{ backgroundImage: `url('banner.jpg')`, marginTop: '-3px' }}
+>
       </section>
       {/* NEW BANNER SECTION END */}
 
@@ -277,7 +275,7 @@ function App() {
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <div className="animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-lime-200 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white-200 bg-clip-text">
               Cultural Club
             </h1>
             <h2 className="text-2xl md:text-3xl mb-4 text-white-200">
@@ -292,7 +290,7 @@ function App() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
-                onClick={() => scrollToSection('events')}
+                onClick={() => scrollToSection('upcoming-events')}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25"
               >
                 Explore Events
@@ -353,7 +351,7 @@ function App() {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-20">
+      <section className="py-20" id='upcoming-events'>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Upcoming Events</h2>
@@ -546,9 +544,12 @@ function App() {
             <a href="https://forms.gle/niKmfExo62gCPSR8A" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 inline-flex items-center justify-center">
               Register for Events
             </a>
-            <button className="border-2 border-purple-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105">
-              Contact Us
-            </button>
+            <a href="mailto:culturalclubpvpsit@gmail.com">
+  <button className="border-2 border-purple-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105">
+    Contact Us
+  </button>
+</a>
+
           </div>
         </div>
       </section>
